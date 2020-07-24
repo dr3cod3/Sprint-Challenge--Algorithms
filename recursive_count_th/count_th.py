@@ -6,33 +6,12 @@ Your function must utilize recursion. It cannot contain any loops.
 '''
 
 
-# def count_th(word):
-#     # What is the base case to stop or not to recurse
-#     wlen = len(word)
-#     count = 0
-#     if wlen == 0:
-#         return
-#     # what is the recursive case
-#     # Have to go through the input "word" compare the
-#     # strings and update the variable tracking the count
-
-#     else:
-#         if "th" in count_th(word):
-#             count += 1
-#         wlen - 1
-
-#     return count
-
-#     # TBC
-
-
 def count_th(word):
     if "~" in word:
         inc = word.find("~")
     else:
         inc = 0
         word = "~" + word
-    # print(word)
     if inc < len(word):
         if inc + 2 >= len(word):
             return 0
